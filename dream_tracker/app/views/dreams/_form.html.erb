@@ -1,0 +1,7 @@
+<%= form_for(@dream) do |f| %>
+<div><%= f.label "Date:" %><%= f.date_field :date %></div>
+<div><%= f.label "Title:"%><%= f.text_field :title, size: "50x1" %></div>
+<div><%= f.label "Description:" %></div>
+<div><%= f.text_area :body, size: "45x12" %></div>
+<div><%= f.submit %></div>
+<% end %>

@@ -1,3 +1,5 @@
-<%= @dream.date %>
-<%= @dream.title %>
-<%= @dream.body %>
+<div class="date"><%= @dream.date %></div>
+<div class="title"><%= @dream.title %></div>
+<div class="body"><%= @dream.body %></div>
+
+<%= link_to "Erase this Dream's Memory", @dream, method: :delete, data: { confirm: "erase this dream forever?"} %>

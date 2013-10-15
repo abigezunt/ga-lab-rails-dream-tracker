@@ -33,6 +33,8 @@ class DreamsController < ApplicationController
   end
 
   def destroy
+  	@dream.destroy
+  	redirect_to_dreams_url
   end
 
   private
