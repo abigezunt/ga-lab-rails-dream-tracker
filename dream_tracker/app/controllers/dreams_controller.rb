@@ -1,4 +1,4 @@
-class SpidersController < ApplicationController
+class DreamsController < ApplicationController
   before_action :set_dream, only: [:show, :edit, :update, :destroy]
 
   def show
@@ -25,6 +25,11 @@ class SpidersController < ApplicationController
   end
   
   def update
+    if @dream.update(dream_params)
+  	  redirect_to @dream
+  	else
+  	  render action: 'edit'
+    end
   end
 
   def destroy

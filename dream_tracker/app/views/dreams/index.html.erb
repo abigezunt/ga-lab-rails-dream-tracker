@@ -1,5 +1,9 @@
-<%= @dreams.each do |dream| %>
+<% @dreams.each do |dream| %>
 <%= dream.date%>
 <%= dream.title%>
 <%= link_to "Read about this dream", dream %>
+<%= link_to "Edit this dream-recollection", edit_dream_path(dream) %>
 <% end %>
+
+<%= link_to "Record a Dream", new_dream_path %>
+
