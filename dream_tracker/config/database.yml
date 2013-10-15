@@ -1,0 +1,27 @@
+
+development:
+  host: localhost
+  adapter: postgresql
+  encoding: unicode
+  database: dream_tracker_development
+  pool: 5
+  username:
+  password:
+
+test:
+  host: localhost
+  adapter: postgresql
+  encoding: unicode
+  database: dream_tracker_test
+  pool: 5
+  username: 
+  password:
+
+production:
+  host: localhost
+  adapter: postgresql
+  encoding: unicode
+  database: dream_tracker_production
+  pool: 5
+  username: 
+  password:
